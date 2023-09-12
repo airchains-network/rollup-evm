@@ -6,11 +6,11 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/evmos/ethermint/crypto/ethsecp256k1"
-	etherminttypes "github.com/evmos/ethermint/types"
-	"github.com/evmos/ethermint/x/evm"
-	"github.com/evmos/ethermint/x/evm/statedb"
-	"github.com/evmos/ethermint/x/evm/types"
+	"github.com/airchains-network/execution-layer-cosmos-evm/crypto/ethsecp256k1"
+	etherminttypes "github.com/airchains-network/execution-layer-cosmos-evm/types"
+	"github.com/airchains-network/execution-layer-cosmos-evm/x/evm"
+	"github.com/airchains-network/execution-layer-cosmos-evm/x/evm/statedb"
+	"github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
 )
 
 func (suite *EvmTestSuite) TestInitGenesis() {

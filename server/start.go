@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/evmos/ethermint/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/airchains-network/execution-layer-cosmos-evm/blob/main/LICENSE
 package server
 
 import (
@@ -61,11 +61,11 @@ import (
 	"github.com/cosmos/cosmos-sdk/server/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/evmos/ethermint/indexer"
-	ethdebug "github.com/evmos/ethermint/rpc/namespaces/ethereum/debug"
-	"github.com/evmos/ethermint/server/config"
-	srvflags "github.com/evmos/ethermint/server/flags"
-	ethermint "github.com/evmos/ethermint/types"
+	"github.com/airchains-network/execution-layer-cosmos-evm/indexer"
+	ethdebug "github.com/airchains-network/execution-layer-cosmos-evm/rpc/namespaces/ethereum/debug"
+	"github.com/airchains-network/execution-layer-cosmos-evm/server/config"
+	srvflags "github.com/airchains-network/execution-layer-cosmos-evm/server/flags"
+	ethermint "github.com/airchains-network/execution-layer-cosmos-evm/types"
 )
 
 // DBOpener is a function to open `application.db`, potentially with customized options.

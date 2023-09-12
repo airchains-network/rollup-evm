@@ -2,8 +2,8 @@ package keeper_test
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	feemarketkeeper "github.com/evmos/ethermint/x/feemarket/keeper"
-	"github.com/evmos/ethermint/x/feemarket/types"
+	feemarketkeeper "github.com/airchains-network/execution-layer-cosmos-evm/x/feemarket/keeper"
+	"github.com/airchains-network/execution-layer-cosmos-evm/x/feemarket/types"
 )
 
 type mockSubspace struct {

@@ -8,10 +8,10 @@ import (
 
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 
-	"github.com/evmos/ethermint/app"
-	"github.com/evmos/ethermint/encoding"
-	"github.com/evmos/ethermint/tests"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
+	"github.com/airchains-network/execution-layer-cosmos-evm/app"
+	"github.com/airchains-network/execution-layer-cosmos-evm/encoding"
+	"github.com/airchains-network/execution-layer-cosmos-evm/tests"
+	evmtypes "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
 )
 
 func TestTxEncoding(t *testing.T) {

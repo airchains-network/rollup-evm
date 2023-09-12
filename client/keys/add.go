@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/evmos/ethermint/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/airchains-network/execution-layer-cosmos-evm/blob/main/LICENSE
 package keys
 
 import (
@@ -22,7 +22,7 @@ import (
 	"fmt"
 	"sort"
 
-	etherminthd "github.com/evmos/ethermint/crypto/hd"
+	etherminthd "github.com/airchains-network/execution-layer-cosmos-evm/crypto/hd"
 
 	bip39 "github.com/cosmos/go-bip39"
 	"github.com/spf13/cobra"

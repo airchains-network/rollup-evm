@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/evmos/ethermint/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/airchains-network/execution-layer-cosmos-evm/blob/main/LICENSE
 package ante
 
 import (
@@ -26,10 +26,10 @@ import (
 	"github.com/ethereum/go-ethereum/core/vm"
 	"github.com/ethereum/go-ethereum/params"
 
-	"github.com/evmos/ethermint/x/evm/statedb"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
-	evm "github.com/evmos/ethermint/x/evm/vm"
-	feemarkettypes "github.com/evmos/ethermint/x/feemarket/types"
+	"github.com/airchains-network/execution-layer-cosmos-evm/x/evm/statedb"
+	evmtypes "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
+	evm "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/vm"
+	feemarkettypes "github.com/airchains-network/execution-layer-cosmos-evm/x/feemarket/types"
 )
 
 // DynamicFeeEVMKeeper is a subset of EVMKeeper interface that supports dynamic fee checker

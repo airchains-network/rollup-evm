@@ -1,4 +1,4 @@
-module github.com/evmos/ethermint
+module github.com/airchains-network/execution-layer-cosmos-evm
 
 go 1.19
 

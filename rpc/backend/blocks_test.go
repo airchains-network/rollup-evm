@@ -14,10 +14,10 @@ import (
 	tmtypes "github.com/tendermint/tendermint/types"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/evmos/ethermint/rpc/backend/mocks"
-	ethrpc "github.com/evmos/ethermint/rpc/types"
-	"github.com/evmos/ethermint/tests"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
+	"github.com/airchains-network/execution-layer-cosmos-evm/rpc/backend/mocks"
+	ethrpc "github.com/airchains-network/execution-layer-cosmos-evm/rpc/types"
+	"github.com/airchains-network/execution-layer-cosmos-evm/tests"
+	evmtypes "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
 )
 
 func (suite *BackendTestSuite) TestBlockNumber() {

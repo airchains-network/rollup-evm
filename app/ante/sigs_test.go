@@ -3,9 +3,9 @@ package ante_test
 import (
 	"math/big"
 
-	"github.com/evmos/ethermint/tests"
-	"github.com/evmos/ethermint/x/evm/statedb"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
+	"github.com/airchains-network/execution-layer-cosmos-evm/tests"
+	"github.com/airchains-network/execution-layer-cosmos-evm/x/evm/statedb"
+	evmtypes "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
 )
 
 func (suite AnteTestSuite) TestSignatures() {

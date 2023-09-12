@@ -5,9 +5,9 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
-	"github.com/evmos/ethermint/rpc/backend/mocks"
-	ethrpc "github.com/evmos/ethermint/rpc/types"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
+	"github.com/airchains-network/execution-layer-cosmos-evm/rpc/backend/mocks"
+	ethrpc "github.com/airchains-network/execution-layer-cosmos-evm/rpc/types"
+	evmtypes "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
 	tmtypes "github.com/tendermint/tendermint/types"
 )
 

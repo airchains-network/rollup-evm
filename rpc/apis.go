@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/evmos/ethermint/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/airchains-network/execution-layer-cosmos-evm/blob/main/LICENSE
 package rpc
 
 import (
@@ -23,16 +23,16 @@ import (
 
 	"github.com/ethereum/go-ethereum/rpc"
 
-	"github.com/evmos/ethermint/rpc/backend"
-	"github.com/evmos/ethermint/rpc/namespaces/ethereum/debug"
-	"github.com/evmos/ethermint/rpc/namespaces/ethereum/eth"
-	"github.com/evmos/ethermint/rpc/namespaces/ethereum/eth/filters"
-	"github.com/evmos/ethermint/rpc/namespaces/ethereum/miner"
-	"github.com/evmos/ethermint/rpc/namespaces/ethereum/net"
-	"github.com/evmos/ethermint/rpc/namespaces/ethereum/personal"
-	"github.com/evmos/ethermint/rpc/namespaces/ethereum/txpool"
-	"github.com/evmos/ethermint/rpc/namespaces/ethereum/web3"
-	ethermint "github.com/evmos/ethermint/types"
+	"github.com/airchains-network/execution-layer-cosmos-evm/rpc/backend"
+	"github.com/airchains-network/execution-layer-cosmos-evm/rpc/namespaces/ethereum/debug"
+	"github.com/airchains-network/execution-layer-cosmos-evm/rpc/namespaces/ethereum/eth"
+	"github.com/airchains-network/execution-layer-cosmos-evm/rpc/namespaces/ethereum/eth/filters"
+	"github.com/airchains-network/execution-layer-cosmos-evm/rpc/namespaces/ethereum/miner"
+	"github.com/airchains-network/execution-layer-cosmos-evm/rpc/namespaces/ethereum/net"
+	"github.com/airchains-network/execution-layer-cosmos-evm/rpc/namespaces/ethereum/personal"
+	"github.com/airchains-network/execution-layer-cosmos-evm/rpc/namespaces/ethereum/txpool"
+	"github.com/airchains-network/execution-layer-cosmos-evm/rpc/namespaces/ethereum/web3"
+	ethermint "github.com/airchains-network/execution-layer-cosmos-evm/types"
 
 	rpcclient "github.com/tendermint/tendermint/rpc/jsonrpc/client"
 )

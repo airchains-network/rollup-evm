@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/evmos/ethermint/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/airchains-network/execution-layer-cosmos-evm/blob/main/LICENSE
 package app
 
 import (
@@ -116,19 +116,19 @@ import (
 	ibckeeper "github.com/cosmos/ibc-go/v6/modules/core/keeper"
 
 	// unnamed import of statik for swagger UI support
-	_ "github.com/evmos/ethermint/client/docs/statik"
+	_ "github.com/airchains-network/execution-layer-cosmos-evm/client/docs/statik"
 
-	"github.com/evmos/ethermint/app/ante"
-	"github.com/evmos/ethermint/ethereum/eip712"
-	srvflags "github.com/evmos/ethermint/server/flags"
-	ethermint "github.com/evmos/ethermint/types"
-	"github.com/evmos/ethermint/x/evm"
-	evmkeeper "github.com/evmos/ethermint/x/evm/keeper"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
-	"github.com/evmos/ethermint/x/evm/vm/geth"
-	"github.com/evmos/ethermint/x/feemarket"
-	feemarketkeeper "github.com/evmos/ethermint/x/feemarket/keeper"
-	feemarkettypes "github.com/evmos/ethermint/x/feemarket/types"
+	"github.com/airchains-network/execution-layer-cosmos-evm/app/ante"
+	"github.com/airchains-network/execution-layer-cosmos-evm/ethereum/eip712"
+	srvflags "github.com/airchains-network/execution-layer-cosmos-evm/server/flags"
+	ethermint "github.com/airchains-network/execution-layer-cosmos-evm/types"
+	"github.com/airchains-network/execution-layer-cosmos-evm/x/evm"
+	evmkeeper "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/keeper"
+	evmtypes "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
+	"github.com/airchains-network/execution-layer-cosmos-evm/x/evm/vm/geth"
+	"github.com/airchains-network/execution-layer-cosmos-evm/x/feemarket"
+	feemarketkeeper "github.com/airchains-network/execution-layer-cosmos-evm/x/feemarket/keeper"
+	feemarkettypes "github.com/airchains-network/execution-layer-cosmos-evm/x/feemarket/types"
 
 	// Force-load the tracer engines to trigger registration due to Go-Ethereum v1.10.15 changes
 	_ "github.com/ethereum/go-ethereum/eth/tracers/js"

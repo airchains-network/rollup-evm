@@ -5,14 +5,14 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/evmos/ethermint/x/evm/types"
+	"github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
 
 	"github.com/cosmos/cosmos-sdk/testutil"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/evmos/ethermint/app"
-	"github.com/evmos/ethermint/encoding"
-	v4 "github.com/evmos/ethermint/x/evm/migrations/v4"
-	v4types "github.com/evmos/ethermint/x/evm/migrations/v4/types"
+	"github.com/airchains-network/execution-layer-cosmos-evm/app"
+	"github.com/airchains-network/execution-layer-cosmos-evm/encoding"
+	v4 "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/migrations/v4"
+	v4types "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/migrations/v4/types"
 )
 
 type mockSubspace struct {

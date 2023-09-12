@@ -18,15 +18,15 @@ import (
 	"github.com/stretchr/testify/suite"
 	tmrpctypes "github.com/tendermint/tendermint/rpc/core/types"
 
-	"github.com/evmos/ethermint/app"
-	"github.com/evmos/ethermint/crypto/ethsecp256k1"
-	"github.com/evmos/ethermint/crypto/hd"
-	"github.com/evmos/ethermint/encoding"
-	"github.com/evmos/ethermint/indexer"
-	"github.com/evmos/ethermint/rpc/backend/mocks"
-	rpctypes "github.com/evmos/ethermint/rpc/types"
-	"github.com/evmos/ethermint/tests"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
+	"github.com/airchains-network/execution-layer-cosmos-evm/app"
+	"github.com/airchains-network/execution-layer-cosmos-evm/crypto/ethsecp256k1"
+	"github.com/airchains-network/execution-layer-cosmos-evm/crypto/hd"
+	"github.com/airchains-network/execution-layer-cosmos-evm/encoding"
+	"github.com/airchains-network/execution-layer-cosmos-evm/indexer"
+	"github.com/airchains-network/execution-layer-cosmos-evm/rpc/backend/mocks"
+	rpctypes "github.com/airchains-network/execution-layer-cosmos-evm/rpc/types"
+	"github.com/airchains-network/execution-layer-cosmos-evm/tests"
+	evmtypes "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
 )
 
 type BackendTestSuite struct {
