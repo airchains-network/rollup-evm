@@ -1,7 +1,7 @@
 #!/bin/bash
 
 KEY="keedanoob"
-CHAINID="airchains_9000-1"
+CHAINID="aircosmic_5501-1107"
 MONIKER="localtestnet"
 KEYRING="test"
 KEYALGO="eth_secp256k1"
@@ -16,7 +16,7 @@ command -v jq > /dev/null 2>&1 || { echo >&2 "jq not installed. More info: https
 # remove existing daemon and client
 rm -rf ~/.ethermintd*
 
-make install
+make build
 
 ethermintd config keyring-backend $KEYRING
 ethermintd config chain-id $CHAINID
