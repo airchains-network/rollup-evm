@@ -18,14 +18,14 @@ rm -rf ~/.ethermintd*
 
 make build
 
-ethermintd config keyring-backend $KEYRING
-ethermintd config chain-id $CHAINID
+./build/ethermintd config keyring-backend $KEYRING
+./build/ethermintd config chain-id $CHAINID
 
 # if $KEY exists it should be deleted
-ethermintd keys add $KEY --keyring-backend $KEYRING --algo $KEYALGO
+./build/ethermintd keys add $KEY --keyring-backend $KEYRING --algo $KEYALGO
 
 # Set moniker and chain-id for Ethermint (Moniker can be anything, chain-id must be an integer)
-ethermintd init $MONIKER --chain-id $CHAINID
+./build/ethermintd init $MONIKER --chain-id $CHAINID
 
 # Change parameter token denominations to aphoton
 cat $HOME/.ethermintd/config/genesis.json | jq '.app_state["staking"]["params"]["bond_denom"]="aphoton"' > $HOME/.ethermintd/config/tmp_genesis.json && mv $HOME/.ethermintd/config/tmp_genesis.json $HOME/.ethermintd/config/genesis.json
@@ -37,16 +37,16 @@ cat $HOME/.ethermintd/config/genesis.json | jq '.app_state["mint"]["params"]["mi
 cat $HOME/.ethermintd/config/genesis.json | jq '.consensus_params["block"]["max_gas"]="20000000"' > $HOME/.ethermintd/config/tmp_genesis.json && mv $HOME/.ethermintd/config/tmp_genesis.json $HOME/.ethermintd/config/genesis.json
 
 # Allocate genesis accounts (cosmos formatted addresses)
-ethermintd add-genesis-account $KEY 100000000000000000000000000aphoton --keyring-backend $KEYRING
+./build/ethermintd add-genesis-account $KEY 100000000000000000000000000aphoton --keyring-backend $KEYRING
 
 # Sign genesis transaction
-ethermintd gentx $KEY 1000000000000000000000aphoton --keyring-backend $KEYRING --chain-id $CHAINID
+./build/ethermintd gentx $KEY 1000000000000000000000aphoton --keyring-backend $KEYRING --chain-id $CHAINID
 
 # Collect genesis tx
-ethermintd collect-gentxs
+./build/ethermintd collect-gentxs
 
 # Run this to ensure everything worked and that the genesis file is setup correctly
-ethermintd validate-genesis
+./build/ethermintd validate-genesis
 
 # disable produce empty block and enable prometheus metrics
 if [[ "$OSTYPE" == "darwin"* ]]; then
@@ -87,4 +87,4 @@ if [[ $1 == "pending" ]]; then
 fi
 
 # Start the node (remove the --pruning=nothing flag if historical queries are not needed)
-ethermintd start --metrics --pruning=nothing --evm.tracer=json $TRACE --log_level $LOGLEVEL --minimum-gas-prices=0.0001aphoton --json-rpc.api eth,txpool,personal,net,debug,web3,miner --api.enable 
+./build/ethermintd start --metrics --pruning=nothing --evm.tracer=json $TRACE --log_level $LOGLEVEL --minimum-gas-prices=0.0001aphoton --json-rpc.api eth,txpool,personal,net,debug,web3,miner --api.enable 
