@@ -11,11 +11,11 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
 
 	"github.com/airchains-network/execution-layer-cosmos-evm/app"
-	ethermintd "github.com/airchains-network/execution-layer-cosmos-evm/cmd/ethermintd"
+	aircosmicd "github.com/airchains-network/execution-layer-cosmos-evm/cmd/aircosmicd"
 )
 
 func TestInitCmd(t *testing.T) {
-	rootCmd, _ := ethermintd.NewRootCmd()
+	rootCmd, _ := aircosmicd.NewRootCmd()
 	rootCmd.SetArgs([]string{
 		"init",          // Test the init cmd
 		"etherminttest", // Moniker
