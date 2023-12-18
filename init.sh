@@ -4,10 +4,30 @@
 # validate dependencies are installed
 command -v jq > /dev/null 2>&1 || { echo >&2 "jq not installed. More info: https://stedolan.github.io/jq/download/"; exit 1; }
 
-CONFIG_FILE="./config/config.json"
-KEY=$(jq -r 'chainInfo.key' $CONFIG_FILE)
+CONFIG_FILE="../config/config.json"
+KEY=$(jq -r '.chainInfo.key' $CONFIG_FILE)
 CHAINID=$(jq -r '.chainInfo.chainID' $CONFIG_FILE)
-MONIKER=$(jq -r 'chainInfo.moniker' $CONFIG_FILE)
+MONIKER=$(jq -r '.chainInfo.moniker' $CONFIG_FILE)
+
+# Echo the values
+echo "KEY: $KEY"
+echo "CHAINID: $CHAINID"
+echo "MONIKER: $MONIKER"
+# Check if the values are present
+if [ -z "$KEY" ]; then
+    echo "Error: 'key' not found in the JSON file."
+    exit 1
+fi
+
+if [ -z "$CHAINID" ]; then
+    echo "Error: 'chainID' not found in the JSON file."
+    exit 1
+fi
+
+if [ -z "$MONIKER" ]; then
+    echo "Error: 'moniker' not found in the JSON file."
+    exit 1
+fi
 KEYRING="test"
 KEYALGO="eth_secp256k1"
 LOGLEVEL="info"
