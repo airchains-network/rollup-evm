@@ -1,6 +1,6 @@
 dotenv: .env
 ethermint_9000-1:
-  cmd: ethermintd
+  cmd: aircosmicd
   start-flags: "--trace"
   app-config:
     minimum-gas-prices: 0aphoton

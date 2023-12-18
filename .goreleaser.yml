@@ -1,11 +1,11 @@
 before:
   hooks:
-  - go mod download
+    - go mod download
 
 builds:
-  - id: "ethermintd-darwin"
-    main: ./cmd/ethermintd
-    binary: bin/ethermintd
+  - id: "aircosmicd-darwin"
+    main: ./cmd/aircosmicd
+    binary: bin/aircosmicd
     env:
       - CGO_ENABLED=1
       - CC=o64-clang
@@ -15,12 +15,12 @@ builds:
     goarch:
       - amd64
     flags:
-        - -tags=cgo
+      - -tags=cgo
     ldflags:
-      - -s -w -X github.com/cosmos/cosmos-sdk/version.Name=ethermint -X github.com/cosmos/cosmos-sdk/version.AppName=ethermintd -X github.com/cosmos/cosmos-sdk/version.Version={{.Version}} -X github.com/cosmos/cosmos-sdk/version.Commit={{.Commit}}
-  - id: "ethermintd-darwin-arm64"
-    main: ./cmd/ethermintd
-    binary: bin/ethermintd
+      - -s -w -X github.com/cosmos/cosmos-sdk/version.Name=ethermint -X github.com/cosmos/cosmos-sdk/version.AppName=aircosmicd -X github.com/cosmos/cosmos-sdk/version.Version={{.Version}} -X github.com/cosmos/cosmos-sdk/version.Commit={{.Commit}}
+  - id: "aircosmicd-darwin-arm64"
+    main: ./cmd/aircosmicd
+    binary: bin/aircosmicd
     env:
       - CGO_ENABLED=1
       - CC=oa64-clang
@@ -32,10 +32,10 @@ builds:
     flags:
       - -tags=cgo
     ldflags:
-      - -s -w -X github.com/cosmos/cosmos-sdk/version.Name=ethermint -X github.com/cosmos/cosmos-sdk/version.AppName=ethermintd -X github.com/cosmos/cosmos-sdk/version.Version={{.Version}} -X github.com/cosmos/cosmos-sdk/version.Commit={{.Commit}}
-  - id: "ethermintd-linux"
-    main: ./cmd/ethermintd
-    binary: bin/ethermintd
+      - -s -w -X github.com/cosmos/cosmos-sdk/version.Name=ethermint -X github.com/cosmos/cosmos-sdk/version.AppName=aircosmicd -X github.com/cosmos/cosmos-sdk/version.Version={{.Version}} -X github.com/cosmos/cosmos-sdk/version.Commit={{.Commit}}
+  - id: "aircosmicd-linux"
+    main: ./cmd/aircosmicd
+    binary: bin/aircosmicd
     env:
       - CGO_ENABLED=1
       - CC=gcc
@@ -47,10 +47,10 @@ builds:
     flags:
       - -tags=cgo
     ldflags:
-      - -s -w -X github.com/cosmos/cosmos-sdk/version.Name=ethermint -X github.com/cosmos/cosmos-sdk/version.AppName=ethermintd -X github.com/cosmos/cosmos-sdk/version.Version={{.Version}} -X github.com/cosmos/cosmos-sdk/version.Commit={{.Commit}}
-  - id: "ethermintd-linux-arm64"
-    main: ./cmd/ethermintd
-    binary: bin/ethermintd
+      - -s -w -X github.com/cosmos/cosmos-sdk/version.Name=ethermint -X github.com/cosmos/cosmos-sdk/version.AppName=aircosmicd -X github.com/cosmos/cosmos-sdk/version.Version={{.Version}} -X github.com/cosmos/cosmos-sdk/version.Commit={{.Commit}}
+  - id: "aircosmicd-linux-arm64"
+    main: ./cmd/aircosmicd
+    binary: bin/aircosmicd
     env:
       - CGO_ENABLED=1
       - CC=aarch64-linux-gnu-gcc
@@ -62,10 +62,10 @@ builds:
     flags:
       - -tags=cgo
     ldflags:
-      - -s -w -X github.com/cosmos/cosmos-sdk/version.Name=ethermint -X github.com/cosmos/cosmos-sdk/version.AppName=ethermintd -X github.com/cosmos/cosmos-sdk/version.Version={{.Version}} -X github.com/cosmos/cosmos-sdk/version.Commit={{.Commit}}
-  - id: "ethermintd-windows"
-    main: ./cmd/ethermintd
-    binary: bin/ethermintd
+      - -s -w -X github.com/cosmos/cosmos-sdk/version.Name=ethermint -X github.com/cosmos/cosmos-sdk/version.AppName=aircosmicd -X github.com/cosmos/cosmos-sdk/version.Version={{.Version}} -X github.com/cosmos/cosmos-sdk/version.Commit={{.Commit}}
+  - id: "aircosmicd-windows"
+    main: ./cmd/aircosmicd
+    binary: bin/aircosmicd
     env:
       - CGO_ENABLED=1
       - CC=x86_64-w64-mingw32-gcc
@@ -78,32 +78,32 @@ builds:
       - -tags=cgo
       - -buildmode=exe
     ldflags:
-      - -s -w -X github.com/cosmos/cosmos-sdk/version.Name=ethermint -X github.com/cosmos/cosmos-sdk/version.AppName=ethermintd -X github.com/cosmos/cosmos-sdk/version.Version={{.Version}} -X github.com/cosmos/cosmos-sdk/version.Commit={{.Commit}}
+      - -s -w -X github.com/cosmos/cosmos-sdk/version.Name=ethermint -X github.com/cosmos/cosmos-sdk/version.AppName=aircosmicd -X github.com/cosmos/cosmos-sdk/version.Version={{.Version}} -X github.com/cosmos/cosmos-sdk/version.Commit={{.Commit}}
 
 archives:
-- name_template: '{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}'
-  replacements:
-    darwin: Darwin
-    linux: Linux
-    windows: Windows
-    amd64: x86_64
-  format_overrides:
-    - goos: windows
-      format: zip
-  builds:
-  - ethermintd-darwin
-  - ethermintd-darwin-arm64
-  - ethermintd-windows
-  - ethermintd-linux
-  - ethermintd-linux-arm64
-  
+  - name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
+    replacements:
+      darwin: Darwin
+      linux: Linux
+      windows: Windows
+      amd64: x86_64
+    format_overrides:
+      - goos: windows
+        format: zip
+    builds:
+      - aircosmicd-darwin
+      - aircosmicd-darwin-arm64
+      - aircosmicd-windows
+      - aircosmicd-linux
+      - aircosmicd-linux-arm64
+
 checksum:
-  name_template: 'checksums.txt'
+  name_template: "checksums.txt"
 changelog:
   sort: asc
   filters:
     exclude:
-    - '^docs:'
-    - '^test:'
+      - "^docs:"
+      - "^test:"
 snapshot:
   name_template: "{{ .Tag }}-next"

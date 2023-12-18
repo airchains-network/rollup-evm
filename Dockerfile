@@ -24,7 +24,7 @@ RUN apk add --update ca-certificates jq
 WORKDIR /
 
 # Copy over binaries from the build-env
-COPY --from=build-env /go/src/github.com/airchains-network/execution-layer-cosmos-evm/build/ethermintd /usr/bin/ethermintd
+COPY --from=build-env /go/src/github.com/airchains-network/execution-layer-cosmos-evm/build/aircosmicd /usr/bin/aircosmicd
 
-# Run ethermintd by default
-CMD ["ethermintd"]
+# Run aircosmicd by default
+CMD ["aircosmicd"]

@@ -7,13 +7,13 @@ CHAIN_ID="aircosmic_5501-1107"
 NODE_NAME="aircosmic-node-1"
 
 # Initialize the Ethermint node with the specified chain ID
-./build/ethermintd init $NODE_NAME --chain-id=$CHAIN_ID
+./build/aircosmicd init $NODE_NAME --chain-id=$CHAIN_ID
 
 # Copy the genesis file from the seed node
-cp ./seed-genesis.json ~/.ethermintd/config/genesis.json
+cp ./seed-genesis.json ~/.aircosmicd/config/genesis.json
 
 # Update the persistent peers in the config.toml file
-sed -i "s/persistent_peers = \"\"/persistent_peers = \"$SEED_NODE_ID@$SEED_NODE_IP:26656\"/g" ~/.ethermintd/config/config.toml
+sed -i "s/persistent_peers = \"\"/persistent_peers = \"$SEED_NODE_ID@$SEED_NODE_IP:26656\"/g" ~/.aircosmicd/config/config.toml
 
 # Start the Ethermint node
-./build/ethermintd start
+./build/aircosmicd start
