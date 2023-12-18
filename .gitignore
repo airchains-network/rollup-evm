@@ -80,3 +80,6 @@ dependency-graph.png
 
 # OpenZeppelin contracts
 contracts/@openzeppelin/*
+
+# Config
+config.json

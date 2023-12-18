@@ -1,8 +1,13 @@
 #!/bin/bash
 
-KEY="keedanoob"
-CHAINID="aircosmic_5501-1107"
-MONIKER="localtestnet"
+
+# validate dependencies are installed
+command -v jq > /dev/null 2>&1 || { echo >&2 "jq not installed. More info: https://stedolan.github.io/jq/download/"; exit 1; }
+
+CONFIG_FILE="../config.json"
+KEY=$(jq -r '.key' $CONFIG_FILE)
+CHAINID=$(jq -r '.chainID' $CONFIG_FILE)
+MONIKER=$(jq -r '.moniker' $CONFIG_FILE)
 KEYRING="test"
 KEYALGO="eth_secp256k1"
 LOGLEVEL="info"
@@ -10,8 +15,6 @@ LOGLEVEL="info"
 TRACE="--trace"
 # TRACE=""
 
-# validate dependencies are installed
-command -v jq > /dev/null 2>&1 || { echo >&2 "jq not installed. More info: https://stedolan.github.io/jq/download/"; exit 1; }
 
 # remove existing daemon and client
 rm -rf ~/.aircosmicd*
