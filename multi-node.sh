@@ -3,7 +3,7 @@
 rm -rf ~/.aircosmicd
 
 command -v jq > /dev/null 2>&1 || { echo >&2 "jq not installed. More info: https://stedolan.github.io/jq/download/"; exit 1; }
-CONFIG_FILE="../config/mutlinode-config.json"
+CONFIG_FILE="../config/multinode-config.json"
 
 
 # Define variables
