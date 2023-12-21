@@ -39,7 +39,8 @@ else
 fi
 
 
-
+rm -rf ./build
+make build
 # Update the persistent peers in the config.toml file
 sed -i "s/persistent_peers = \"\"/persistent_peers = \"$SEED_NODE_ID@$SEED_NODE_IP:26656\"/g" ~/.aircosmicd/config/config.toml
 
