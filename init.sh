@@ -9,25 +9,18 @@ KEY=$(jq -r '.chainInfo.key' $CONFIG_FILE)
 CHAINID=$(jq -r '.chainInfo.chainID' $CONFIG_FILE)
 MONIKER=$(jq -r '.chainInfo.moniker' $CONFIG_FILE)
 
-# Echo the values
-echo "KEY: $KEY"
-echo "CHAINID: $CHAINID"
-echo "MONIKER: $MONIKER"
-# Check if the values are present
-if [ -z "$KEY" ]; then
-    echo "Error: 'key' not found in the JSON file."
+if [ -z "$KEY" ] || [ -z "$CHAINID" ] || [ -z "$MONIKER" ]; then
+    echo "Error: One or more values could not be fetched from the JSON file."
     exit 1
+else
+    # Echo the values
+    echo "KEY: $KEY"
+    echo "CHAINID: $CHAINID"
+    echo "MONIKER: $MONIKER"
 fi
 
-if [ -z "$CHAINID" ]; then
-    echo "Error: 'chainID' not found in the JSON file."
-    exit 1
-fi
 
-if [ -z "$MONIKER" ]; then
-    echo "Error: 'moniker' not found in the JSON file."
-    exit 1
-fi
+
 KEYRING="test"
 KEYALGO="eth_secp256k1"
 LOGLEVEL="info"
