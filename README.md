@@ -1,13 +1,10 @@
-# Execution Layer EVM-based Cosmos Chain
-
-![Project Logo](https://www.airchains.io/assets/hero/airlogo.png) 
+![Project Logo](https://www.airchains.io/assets/logos/airchains-evm-rollup-full-logo.png) 
 
 ## Table of Contents
 
 - [Introduction](#introduction)
 - [Features](#features)
 - [Contributors](#contributors)
-- [License](#license)
 
 ## Introduction
 
@@ -28,8 +25,3 @@ This project is maintained by:
 - [Rahul Singh Maraskole](mailto:rahul@airchains.io)
 - [Shubham Sharma](mailto:shubham@airchains.io)
 - [Kritarth Agrawal](mailto:kritarth@airchains.io)
-
-
-## License
-
-Yet to be Licensed
