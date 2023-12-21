@@ -3,10 +3,14 @@
 rm -rf ~/.aircosmicd
 
 command -v jq > /dev/null 2>&1 || { echo >&2 "jq not installed. More info: https://stedolan.github.io/jq/download/"; exit 1; }
-CONFIG_FILE="../config/multinode-config.json"
+
+rm -rf ./build
+make build
 
 
 # Define variables
+CONFIG_FILE="../config/multinode-config.json"
+
 SEED_NODE_ID=$(jq -r '.chainInfo.nodeID' $CONFIG_FILE)
 SEED_NODE_IP=$(jq -r '.chainInfo.ipAddress' $CONFIG_FILE)
 CHAIN_ID=$(jq -r '.chainInfo.chainID' $CONFIG_FILE)
@@ -39,8 +43,7 @@ else
 fi
 
 
-rm -rf ./build
-make build
+
 # Update the persistent peers in the config.toml file
 sed -i "s/persistent_peers = \"\"/persistent_peers = \"$SEED_NODE_ID@$SEED_NODE_IP:26656\"/g" ~/.aircosmicd/config/config.toml
 
