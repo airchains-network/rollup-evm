@@ -18,15 +18,15 @@ import (
 	"github.com/stretchr/testify/suite"
 	tmrpctypes "github.com/tendermint/tendermint/rpc/core/types"
 
-	"github.com/airchains-network/execution-layer-cosmos-evm/app"
-	"github.com/airchains-network/execution-layer-cosmos-evm/crypto/ethsecp256k1"
-	"github.com/airchains-network/execution-layer-cosmos-evm/crypto/hd"
-	"github.com/airchains-network/execution-layer-cosmos-evm/encoding"
-	"github.com/airchains-network/execution-layer-cosmos-evm/indexer"
-	"github.com/airchains-network/execution-layer-cosmos-evm/rpc/backend/mocks"
-	rpctypes "github.com/airchains-network/execution-layer-cosmos-evm/rpc/types"
-	"github.com/airchains-network/execution-layer-cosmos-evm/tests"
-	evmtypes "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
+	"github.com/airchains-network/rollup-evm/app"
+	"github.com/airchains-network/rollup-evm/crypto/ethsecp256k1"
+	"github.com/airchains-network/rollup-evm/crypto/hd"
+	"github.com/airchains-network/rollup-evm/encoding"
+	"github.com/airchains-network/rollup-evm/indexer"
+	"github.com/airchains-network/rollup-evm/rpc/backend/mocks"
+	rpctypes "github.com/airchains-network/rollup-evm/rpc/types"
+	"github.com/airchains-network/rollup-evm/tests"
+	evmtypes "github.com/airchains-network/rollup-evm/x/evm/types"
 )
 
 type BackendTestSuite struct {

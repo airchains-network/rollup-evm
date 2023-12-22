@@ -3,11 +3,11 @@ package ante_test
 import (
 	"math/big"
 
+	"github.com/airchains-network/rollup-evm/app/ante"
+	"github.com/airchains-network/rollup-evm/tests"
+	evmtypes "github.com/airchains-network/rollup-evm/x/evm/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
-	"github.com/airchains-network/execution-layer-cosmos-evm/app/ante"
-	"github.com/airchains-network/execution-layer-cosmos-evm/tests"
-	evmtypes "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
 )
 
 func (suite AnteTestSuite) TestEthSigVerificationDecorator() {

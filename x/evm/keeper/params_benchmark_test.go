@@ -3,7 +3,7 @@ package keeper_test
 import (
 	"testing"
 
-	"github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
+	"github.com/airchains-network/rollup-evm/x/evm/types"
 )
 
 func BenchmarkSetParams(b *testing.B) {

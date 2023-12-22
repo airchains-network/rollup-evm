@@ -3,7 +3,7 @@ package types
 import (
 	"fmt"
 
-	"github.com/airchains-network/execution-layer-cosmos-evm/x/feemarket/types"
+	"github.com/airchains-network/rollup-evm/x/feemarket/types"
 
 	sdkmath "cosmossdk.io/math"
 	sdk "github.com/cosmos/cosmos-sdk/types"

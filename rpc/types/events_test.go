@@ -4,8 +4,8 @@ import (
 	"math/big"
 	"testing"
 
+	evmtypes "github.com/airchains-network/rollup-evm/x/evm/types"
 	"github.com/ethereum/go-ethereum/common"
-	evmtypes "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
 	"github.com/stretchr/testify/require"
 	abci "github.com/tendermint/tendermint/abci/types"
 )

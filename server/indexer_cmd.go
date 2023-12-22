@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/airchains-network/execution-layer-cosmos-evm/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/airchains-network/rollup-evm/blob/main/LICENSE
 package server
 
 import (
@@ -20,9 +20,9 @@ import (
 
 	"github.com/spf13/cobra"
 
+	"github.com/airchains-network/rollup-evm/indexer"
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/server"
-	"github.com/airchains-network/execution-layer-cosmos-evm/indexer"
 	tmnode "github.com/tendermint/tendermint/node"
 	sm "github.com/tendermint/tendermint/state"
 	tmstore "github.com/tendermint/tendermint/store"

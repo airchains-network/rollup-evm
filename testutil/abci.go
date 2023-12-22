@@ -7,7 +7,7 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/airchains-network/execution-layer-cosmos-evm/app"
+	"github.com/airchains-network/rollup-evm/app"
 )
 
 // Commit commits a block at a given time. Reminder: At the end of each

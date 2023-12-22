@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/airchains-network/execution-layer-cosmos-evm/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/airchains-network/rollup-evm/blob/main/LICENSE
 package app
 
 import (
@@ -28,7 +28,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/staking"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 
-	"github.com/airchains-network/execution-layer-cosmos-evm/encoding"
+	"github.com/airchains-network/rollup-evm/encoding"
 )
 
 // NewDefaultGenesisState generates the default state for the application.

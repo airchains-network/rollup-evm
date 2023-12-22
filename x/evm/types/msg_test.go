@@ -10,19 +10,19 @@ import (
 	sdkmath "cosmossdk.io/math"
 	"github.com/stretchr/testify/suite"
 
+	"github.com/airchains-network/rollup-evm/crypto/ethsecp256k1"
+	"github.com/airchains-network/rollup-evm/tests"
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/airchains-network/execution-layer-cosmos-evm/crypto/ethsecp256k1"
-	"github.com/airchains-network/execution-layer-cosmos-evm/tests"
 
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/crypto"
 
-	"github.com/airchains-network/execution-layer-cosmos-evm/app"
-	"github.com/airchains-network/execution-layer-cosmos-evm/encoding"
-	"github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
+	"github.com/airchains-network/rollup-evm/app"
+	"github.com/airchains-network/rollup-evm/encoding"
+	"github.com/airchains-network/rollup-evm/x/evm/types"
 )
 
 const invalidFromAddress = "0x0000"

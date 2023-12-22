@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/airchains-network/execution-layer-cosmos-evm/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/airchains-network/rollup-evm/blob/main/LICENSE
 package backend
 
 import (
@@ -23,15 +23,15 @@ import (
 	"math/big"
 
 	errorsmod "cosmossdk.io/errors"
+	rpctypes "github.com/airchains-network/rollup-evm/rpc/types"
+	ethermint "github.com/airchains-network/rollup-evm/types"
+	evmtypes "github.com/airchains-network/rollup-evm/x/evm/types"
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/core/vm"
-	rpctypes "github.com/airchains-network/execution-layer-cosmos-evm/rpc/types"
-	ethermint "github.com/airchains-network/execution-layer-cosmos-evm/types"
-	evmtypes "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
@@ -84,7 +84,7 @@ func (b *Backend) Resend(args evmtypes.TransactionArgs, gasPrice *hexutil.Big, g
 	}
 
 	for _, tx := range pending {
-		// FIXME does Resend api possible at all?  https://github.com/airchains-network/execution-layer-cosmos-evm/issues/905
+		// FIXME does Resend api possible at all?  https://github.com/airchains-network/rollup-evm/issues/905
 		p, err := evmtypes.UnwrapEthereumMsg(tx, common.Hash{})
 		if err != nil {
 			// not valid ethereum tx

@@ -9,7 +9,7 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/airchains-network/execution-layer-cosmos-evm/testutil/network"
+	"github.com/airchains-network/rollup-evm/testutil/network"
 )
 
 type IntegrationTestSuite struct {

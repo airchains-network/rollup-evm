@@ -13,9 +13,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec/types"
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"
 
-	cryptocodec "github.com/airchains-network/execution-layer-cosmos-evm/crypto/codec"
-	enccodec "github.com/airchains-network/execution-layer-cosmos-evm/encoding/codec"
-	ethermint "github.com/airchains-network/execution-layer-cosmos-evm/types"
+	cryptocodec "github.com/airchains-network/rollup-evm/crypto/codec"
+	enccodec "github.com/airchains-network/rollup-evm/encoding/codec"
+	ethermint "github.com/airchains-network/rollup-evm/types"
 )
 
 var TestCodec amino.Codec

@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/airchains-network/execution-layer-cosmos-evm/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/airchains-network/rollup-evm/blob/main/LICENSE
 package main
 
 import (
@@ -47,16 +47,16 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/crisis"
 	genutilcli "github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
 
-	"github.com/airchains-network/execution-layer-cosmos-evm/app"
-	ethermintclient "github.com/airchains-network/execution-layer-cosmos-evm/client"
-	"github.com/airchains-network/execution-layer-cosmos-evm/client/debug"
-	"github.com/airchains-network/execution-layer-cosmos-evm/crypto/hd"
-	"github.com/airchains-network/execution-layer-cosmos-evm/encoding"
-	"github.com/airchains-network/execution-layer-cosmos-evm/ethereum/eip712"
-	"github.com/airchains-network/execution-layer-cosmos-evm/server"
-	servercfg "github.com/airchains-network/execution-layer-cosmos-evm/server/config"
-	srvflags "github.com/airchains-network/execution-layer-cosmos-evm/server/flags"
-	ethermint "github.com/airchains-network/execution-layer-cosmos-evm/types"
+	"github.com/airchains-network/rollup-evm/app"
+	ethermintclient "github.com/airchains-network/rollup-evm/client"
+	"github.com/airchains-network/rollup-evm/client/debug"
+	"github.com/airchains-network/rollup-evm/crypto/hd"
+	"github.com/airchains-network/rollup-evm/encoding"
+	"github.com/airchains-network/rollup-evm/ethereum/eip712"
+	"github.com/airchains-network/rollup-evm/server"
+	servercfg "github.com/airchains-network/rollup-evm/server/config"
+	srvflags "github.com/airchains-network/rollup-evm/server/flags"
+	ethermint "github.com/airchains-network/rollup-evm/types"
 )
 
 const EnvPrefix = "ETHERMINT"

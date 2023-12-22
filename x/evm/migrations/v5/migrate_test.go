@@ -7,11 +7,11 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/airchains-network/execution-layer-cosmos-evm/app"
-	"github.com/airchains-network/execution-layer-cosmos-evm/encoding"
-	v5 "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/migrations/v5"
-	v5types "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/migrations/v5/types"
-	"github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
+	"github.com/airchains-network/rollup-evm/app"
+	"github.com/airchains-network/rollup-evm/encoding"
+	v5 "github.com/airchains-network/rollup-evm/x/evm/migrations/v5"
+	v5types "github.com/airchains-network/rollup-evm/x/evm/migrations/v5/types"
+	"github.com/airchains-network/rollup-evm/x/evm/types"
 )
 
 func TestMigrate(t *testing.T) {

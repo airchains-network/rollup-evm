@@ -6,10 +6,10 @@ import (
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
 
+	"github.com/airchains-network/rollup-evm/x/evm/statedb"
+	"github.com/airchains-network/rollup-evm/x/evm/types"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/params"
-	"github.com/airchains-network/execution-layer-cosmos-evm/x/evm/statedb"
-	"github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
 )
 
 func (suite *KeeperTestSuite) TestEthereumTx() {

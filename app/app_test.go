@@ -11,7 +11,7 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/airchains-network/execution-layer-cosmos-evm/encoding"
+	"github.com/airchains-network/rollup-evm/encoding"
 )
 
 func TestEthermintAppExport(t *testing.T) {

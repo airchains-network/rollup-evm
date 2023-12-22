@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/airchains-network/execution-layer-cosmos-evm/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/airchains-network/rollup-evm/blob/main/LICENSE
 package miner
 
 import (
@@ -23,7 +23,7 @@ import (
 
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/airchains-network/execution-layer-cosmos-evm/rpc/backend"
+	"github.com/airchains-network/rollup-evm/rpc/backend"
 )
 
 // API is the private miner prefixed set of APIs in the Miner JSON-RPC spec.

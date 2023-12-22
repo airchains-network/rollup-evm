@@ -2,9 +2,9 @@ package keeper_test
 
 import (
 	sdkmath "cosmossdk.io/math"
+	"github.com/airchains-network/rollup-evm/x/feemarket/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	ethparams "github.com/ethereum/go-ethereum/params"
-	"github.com/airchains-network/execution-layer-cosmos-evm/x/feemarket/types"
 )
 
 func (suite *KeeperTestSuite) TestQueryParams() {

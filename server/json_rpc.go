@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/airchains-network/execution-layer-cosmos-evm/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/airchains-network/rollup-evm/blob/main/LICENSE
 package server
 
 import (
@@ -22,15 +22,15 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/rs/cors"
 
+	"github.com/airchains-network/rollup-evm/rpc"
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/server"
 	"github.com/cosmos/cosmos-sdk/server/types"
 	ethlog "github.com/ethereum/go-ethereum/log"
 	ethrpc "github.com/ethereum/go-ethereum/rpc"
-	"github.com/airchains-network/execution-layer-cosmos-evm/rpc"
 
-	"github.com/airchains-network/execution-layer-cosmos-evm/server/config"
-	ethermint "github.com/airchains-network/execution-layer-cosmos-evm/types"
+	"github.com/airchains-network/rollup-evm/server/config"
+	ethermint "github.com/airchains-network/rollup-evm/types"
 )
 
 // StartJSONRPC starts the JSON-RPC server

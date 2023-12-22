@@ -175,7 +175,7 @@ build-all: tools build lint test vulncheck
 ###                                Releasing                                ###
 ###############################################################################
 
-PACKAGE_NAME:=github.com/airchains-network/execution-layer-cosmos-evm
+PACKAGE_NAME:=github.com/airchains-network/rollup-evm
 GOLANG_CROSS_VERSION = v1.19
 GOPATH ?= '$(HOME)/go'
 release-dry-run:
@@ -304,7 +304,7 @@ update-swagger-docs: statik
 .PHONY: update-swagger-docs
 
 godocs:
-	@echo "--> Wait a few seconds and visit http://localhost:6060/pkg/github.com/airchains-network/execution-layer-cosmos-evm/types"
+	@echo "--> Wait a few seconds and visit http://localhost:6060/pkg/github.com/airchains-network/rollup-evm/types"
 	godoc -http=:6060
 
 ###############################################################################
@@ -338,7 +338,7 @@ else
 endif
 
 test-import:
-	go test -run TestImporterTestSuite -v --vet=off github.com/airchains-network/execution-layer-cosmos-evm/tests/importer
+	go test -run TestImporterTestSuite -v --vet=off github.com/airchains-network/rollup-evm/tests/importer
 
 test-rpc:
 	./scripts/integration-test-all.sh -t "rpc" -q 1 -z 1 -s 2 -m "rpc" -r "true"

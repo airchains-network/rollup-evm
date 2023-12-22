@@ -3,10 +3,10 @@ package ante_test
 import (
 	"math/big"
 
+	"github.com/airchains-network/rollup-evm/app/ante"
+	evmtypes "github.com/airchains-network/rollup-evm/x/evm/types"
 	storetypes "github.com/cosmos/cosmos-sdk/store/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/airchains-network/execution-layer-cosmos-evm/app/ante"
-	evmtypes "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
 )
 
 func (suite AnteTestSuite) TestEthSetupContextDecorator() {

@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/airchains-network/execution-layer-cosmos-evm/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/airchains-network/rollup-evm/blob/main/LICENSE
 package network
 
 import (
@@ -64,13 +64,13 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/genutil"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 
-	"github.com/airchains-network/execution-layer-cosmos-evm/crypto/hd"
-	"github.com/airchains-network/execution-layer-cosmos-evm/encoding"
-	"github.com/airchains-network/execution-layer-cosmos-evm/server/config"
-	ethermint "github.com/airchains-network/execution-layer-cosmos-evm/types"
-	evmtypes "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
+	"github.com/airchains-network/rollup-evm/crypto/hd"
+	"github.com/airchains-network/rollup-evm/encoding"
+	"github.com/airchains-network/rollup-evm/server/config"
+	ethermint "github.com/airchains-network/rollup-evm/types"
+	evmtypes "github.com/airchains-network/rollup-evm/x/evm/types"
 
-	"github.com/airchains-network/execution-layer-cosmos-evm/app"
+	"github.com/airchains-network/rollup-evm/app"
 )
 
 // network lock to only allow one test network at a time

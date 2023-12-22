@@ -3,9 +3,9 @@ package types_test
 import (
 	"testing"
 
+	"github.com/airchains-network/rollup-evm/tests"
+	"github.com/airchains-network/rollup-evm/types"
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/airchains-network/execution-layer-cosmos-evm/tests"
-	"github.com/airchains-network/execution-layer-cosmos-evm/types"
 	"github.com/stretchr/testify/require"
 )
 

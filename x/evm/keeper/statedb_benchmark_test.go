@@ -10,7 +10,7 @@ import (
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/crypto"
 
-	"github.com/airchains-network/execution-layer-cosmos-evm/tests"
+	"github.com/airchains-network/rollup-evm/tests"
 )
 
 func BenchmarkCreateAccountNew(b *testing.B) {

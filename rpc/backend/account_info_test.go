@@ -11,10 +11,10 @@ import (
 	tmrpcclient "github.com/tendermint/tendermint/rpc/client"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/airchains-network/execution-layer-cosmos-evm/rpc/backend/mocks"
-	rpctypes "github.com/airchains-network/execution-layer-cosmos-evm/rpc/types"
-	"github.com/airchains-network/execution-layer-cosmos-evm/tests"
-	evmtypes "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
+	"github.com/airchains-network/rollup-evm/rpc/backend/mocks"
+	rpctypes "github.com/airchains-network/rollup-evm/rpc/types"
+	"github.com/airchains-network/rollup-evm/tests"
+	evmtypes "github.com/airchains-network/rollup-evm/x/evm/types"
 )
 
 func (suite *BackendTestSuite) TestGetCode() {

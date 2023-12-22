@@ -1,9 +1,9 @@
 package keeper_test
 
 import (
+	feemarketkeeper "github.com/airchains-network/rollup-evm/x/feemarket/keeper"
+	"github.com/airchains-network/rollup-evm/x/feemarket/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	feemarketkeeper "github.com/airchains-network/execution-layer-cosmos-evm/x/feemarket/keeper"
-	"github.com/airchains-network/execution-layer-cosmos-evm/x/feemarket/types"
 )
 
 type mockSubspace struct {

@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/airchains-network/execution-layer-cosmos-evm/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/airchains-network/rollup-evm/blob/main/LICENSE
 package client
 
 import (
@@ -24,9 +24,9 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/tendermint/tendermint/libs/cli"
 
+	clientkeys "github.com/airchains-network/rollup-evm/client/keys"
+	"github.com/airchains-network/rollup-evm/crypto/hd"
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	clientkeys "github.com/airchains-network/execution-layer-cosmos-evm/client/keys"
-	"github.com/airchains-network/execution-layer-cosmos-evm/crypto/hd"
 )
 
 // KeyCommands registers a sub-tree of commands to interact with

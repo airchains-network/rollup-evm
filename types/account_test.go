@@ -12,10 +12,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 
-	cryptocodec "github.com/airchains-network/execution-layer-cosmos-evm/crypto/codec"
-	"github.com/airchains-network/execution-layer-cosmos-evm/crypto/ethsecp256k1"
-	ethermintcodec "github.com/airchains-network/execution-layer-cosmos-evm/encoding/codec"
-	"github.com/airchains-network/execution-layer-cosmos-evm/types"
+	cryptocodec "github.com/airchains-network/rollup-evm/crypto/codec"
+	"github.com/airchains-network/rollup-evm/crypto/ethsecp256k1"
+	ethermintcodec "github.com/airchains-network/rollup-evm/encoding/codec"
+	"github.com/airchains-network/rollup-evm/types"
 )
 
 func init() {

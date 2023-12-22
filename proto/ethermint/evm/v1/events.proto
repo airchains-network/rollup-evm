@@ -1,7 +1,7 @@
 syntax = "proto3";
 package ethermint.evm.v1;
 
-option go_package = "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types";
+option go_package = "github.com/airchains-network/rollup-evm/x/evm/types";
 
 // EventEthereumTx defines the event for an Ethereum transaction
 message EventEthereumTx {

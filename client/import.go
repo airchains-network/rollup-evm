@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/airchains-network/execution-layer-cosmos-evm/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/airchains-network/rollup-evm/blob/main/LICENSE
 package client
 
 import (
@@ -20,13 +20,13 @@ import (
 
 	"github.com/spf13/cobra"
 
+	"github.com/airchains-network/rollup-evm/crypto/ethsecp256k1"
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/input"
 	"github.com/cosmos/cosmos-sdk/crypto"
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/airchains-network/execution-layer-cosmos-evm/crypto/ethsecp256k1"
 
-	"github.com/airchains-network/execution-layer-cosmos-evm/crypto/hd"
+	"github.com/airchains-network/rollup-evm/crypto/hd"
 )
 
 // UnsafeImportKeyCommand imports private keys from a keyfile.

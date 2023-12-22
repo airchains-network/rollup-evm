@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/airchains-network/execution-layer-cosmos-evm/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/airchains-network/rollup-evm/blob/main/LICENSE
 package debug
 
 import (
@@ -29,18 +29,18 @@ import (
 
 	"github.com/davecgh/go-spew/spew"
 
-	evmtypes "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
+	evmtypes "github.com/airchains-network/rollup-evm/x/evm/types"
 
 	stderrors "github.com/pkg/errors"
 
 	"github.com/cosmos/cosmos-sdk/server"
 
+	"github.com/airchains-network/rollup-evm/rpc/backend"
+	rpctypes "github.com/airchains-network/rollup-evm/rpc/types"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/ethereum/go-ethereum/consensus/ethash"
 	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/airchains-network/execution-layer-cosmos-evm/rpc/backend"
-	rpctypes "github.com/airchains-network/execution-layer-cosmos-evm/rpc/types"
 	"github.com/tendermint/tendermint/libs/log"
 )
 

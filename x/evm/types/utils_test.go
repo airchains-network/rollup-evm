@@ -5,16 +5,16 @@ import (
 	"math/big"
 	"testing"
 
+	"github.com/airchains-network/rollup-evm/app"
+	"github.com/airchains-network/rollup-evm/encoding"
+	evmtypes "github.com/airchains-network/rollup-evm/x/evm/types"
 	"github.com/cosmos/cosmos-sdk/client"
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
-	"github.com/airchains-network/execution-layer-cosmos-evm/app"
-	"github.com/airchains-network/execution-layer-cosmos-evm/encoding"
-	evmtypes "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
 	proto "github.com/gogo/protobuf/proto"
 
-	"github.com/airchains-network/execution-layer-cosmos-evm/tests"
+	"github.com/airchains-network/rollup-evm/tests"
 
 	"github.com/stretchr/testify/require"
 

@@ -3,8 +3,8 @@ package hd
 import (
 	"testing"
 
+	ethermint "github.com/airchains-network/rollup-evm/types"
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	ethermint "github.com/airchains-network/execution-layer-cosmos-evm/types"
 )
 
 func BenchmarkEthSecp256k1Algo_Derive(b *testing.B) {

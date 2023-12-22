@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/airchains-network/execution-layer-cosmos-evm/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/airchains-network/rollup-evm/blob/main/LICENSE
 package codec
 
 import (
@@ -21,8 +21,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/std"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	cryptocodec "github.com/airchains-network/execution-layer-cosmos-evm/crypto/codec"
-	ethermint "github.com/airchains-network/execution-layer-cosmos-evm/types"
+	cryptocodec "github.com/airchains-network/rollup-evm/crypto/codec"
+	ethermint "github.com/airchains-network/rollup-evm/types"
 )
 
 // RegisterLegacyAminoCodec registers Interfaces from types, crypto, and SDK std.

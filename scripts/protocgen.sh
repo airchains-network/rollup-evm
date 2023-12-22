@@ -21,5 +21,5 @@ done
 # TODO: command to generate docs using protoc-gen-doc was deleted here
 
 # move proto files to the right places
-cp -r github.com/airchains-network/execution-layer-cosmos-evm/* ./
+cp -r github.com/airchains-network/rollup-evm/* ./
 rm -rf github.com

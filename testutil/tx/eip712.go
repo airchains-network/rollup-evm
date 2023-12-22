@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/airchains-network/execution-layer-cosmos-evm/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/airchains-network/rollup-evm/blob/main/LICENSE
 package tx
 
 import (
@@ -22,22 +22,22 @@ import (
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"
 
+	cryptocodec "github.com/airchains-network/rollup-evm/crypto/codec"
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/ethereum/go-ethereum/crypto"
-	cryptocodec "github.com/airchains-network/execution-layer-cosmos-evm/crypto/codec"
 
+	"github.com/airchains-network/rollup-evm/ethereum/eip712"
 	"github.com/cosmos/cosmos-sdk/x/auth/migrations/legacytx"
 	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
-	"github.com/airchains-network/execution-layer-cosmos-evm/ethereum/eip712"
 
 	"github.com/cosmos/cosmos-sdk/types/tx/signing"
 	"github.com/ethereum/go-ethereum/signer/core/apitypes"
 
-	"github.com/airchains-network/execution-layer-cosmos-evm/types"
+	"github.com/airchains-network/rollup-evm/types"
 
-	"github.com/airchains-network/execution-layer-cosmos-evm/app"
+	"github.com/airchains-network/rollup-evm/app"
 )
 
 type EIP712TxArgs struct {

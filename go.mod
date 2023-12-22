@@ -1,4 +1,4 @@
-module github.com/airchains-network/execution-layer-cosmos-evm
+module github.com/airchains-network/rollup-evm
 
 go 1.19
 

@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/airchains-network/execution-layer-cosmos-evm/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/airchains-network/rollup-evm/blob/main/LICENSE
 package keeper
 
 import (
@@ -31,10 +31,10 @@ import (
 	"github.com/ethereum/go-ethereum/params"
 	"github.com/tendermint/tendermint/libs/log"
 
-	ethermint "github.com/airchains-network/execution-layer-cosmos-evm/types"
-	"github.com/airchains-network/execution-layer-cosmos-evm/x/evm/statedb"
-	"github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
-	evm "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/vm"
+	ethermint "github.com/airchains-network/rollup-evm/types"
+	"github.com/airchains-network/rollup-evm/x/evm/statedb"
+	"github.com/airchains-network/rollup-evm/x/evm/types"
+	evm "github.com/airchains-network/rollup-evm/x/evm/vm"
 )
 
 // Keeper grants access to the EVM module state and implements the go-ethereum StateDB interface.

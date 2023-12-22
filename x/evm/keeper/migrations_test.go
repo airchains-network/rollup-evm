@@ -1,9 +1,9 @@
 package keeper_test
 
 import (
+	evmkeeper "github.com/airchains-network/rollup-evm/x/evm/keeper"
+	"github.com/airchains-network/rollup-evm/x/evm/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	evmkeeper "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/keeper"
-	"github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
 )
 
 type mockSubspace struct {

@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/airchains-network/execution-layer-cosmos-evm/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/airchains-network/rollup-evm/blob/main/LICENSE
 package feemarket
 
 import (
@@ -34,9 +34,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/airchains-network/execution-layer-cosmos-evm/x/feemarket/client/cli"
-	"github.com/airchains-network/execution-layer-cosmos-evm/x/feemarket/keeper"
-	"github.com/airchains-network/execution-layer-cosmos-evm/x/feemarket/types"
+	"github.com/airchains-network/rollup-evm/x/feemarket/client/cli"
+	"github.com/airchains-network/rollup-evm/x/feemarket/keeper"
+	"github.com/airchains-network/rollup-evm/x/feemarket/types"
 )
 
 var (

@@ -9,9 +9,9 @@ import (
 	"github.com/ethereum/go-ethereum/core"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 
-	"github.com/airchains-network/execution-layer-cosmos-evm/x/evm/keeper"
-	"github.com/airchains-network/execution-layer-cosmos-evm/x/evm/statedb"
-	"github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
+	"github.com/airchains-network/rollup-evm/x/evm/keeper"
+	"github.com/airchains-network/rollup-evm/x/evm/statedb"
+	"github.com/airchains-network/rollup-evm/x/evm/types"
 )
 
 // LogRecordHook records all the logs

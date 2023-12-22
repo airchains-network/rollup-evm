@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/airchains-network/execution-layer-cosmos-evm/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/airchains-network/rollup-evm/blob/main/LICENSE
 package evm
 
 import (
@@ -25,9 +25,9 @@ import (
 	"github.com/ethereum/go-ethereum/crypto"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	ethermint "github.com/airchains-network/execution-layer-cosmos-evm/types"
-	"github.com/airchains-network/execution-layer-cosmos-evm/x/evm/keeper"
-	"github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
+	ethermint "github.com/airchains-network/rollup-evm/types"
+	"github.com/airchains-network/rollup-evm/x/evm/keeper"
+	"github.com/airchains-network/rollup-evm/x/evm/types"
 )
 
 // InitGenesis initializes genesis state based on exported genesis

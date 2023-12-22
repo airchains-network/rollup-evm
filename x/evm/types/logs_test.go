@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/airchains-network/execution-layer-cosmos-evm/tests"
+	"github.com/airchains-network/rollup-evm/tests"
 
 	"github.com/ethereum/go-ethereum/common"
 )

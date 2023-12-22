@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/airchains-network/execution-layer-cosmos-evm/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/airchains-network/rollup-evm/blob/main/LICENSE
 package ante
 
 import (
@@ -25,10 +25,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	errortypes "github.com/cosmos/cosmos-sdk/types/errors"
 
-	ethermint "github.com/airchains-network/execution-layer-cosmos-evm/types"
-	"github.com/airchains-network/execution-layer-cosmos-evm/x/evm/keeper"
-	"github.com/airchains-network/execution-layer-cosmos-evm/x/evm/statedb"
-	evmtypes "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
+	ethermint "github.com/airchains-network/rollup-evm/types"
+	"github.com/airchains-network/rollup-evm/x/evm/keeper"
+	"github.com/airchains-network/rollup-evm/x/evm/statedb"
+	evmtypes "github.com/airchains-network/rollup-evm/x/evm/types"
 
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
@@ -144,7 +144,7 @@ func (egcd EthGasConsumeDecorator) AnteHandle(ctx sdk.Context, tx sdk.Tx, simula
 		// that is not bubbled up. Thus, the Tx never runs on DeliverMode
 		// Error: "gas wanted -1 is negative"
 		// For more information, see issue #1554
-		// https://github.com/airchains-network/execution-layer-cosmos-evm/issues/1554
+		// https://github.com/airchains-network/rollup-evm/issues/1554
 		newCtx := ctx.WithGasMeter(ethermint.NewInfiniteGasMeterWithLimit(gasWanted))
 		return next(newCtx, tx, simulate)
 	}

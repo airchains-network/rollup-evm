@@ -6,12 +6,12 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/airchains-network/execution-layer-cosmos-evm/app/ante"
-	"github.com/airchains-network/execution-layer-cosmos-evm/server/config"
-	"github.com/airchains-network/execution-layer-cosmos-evm/tests"
-	ethermint "github.com/airchains-network/execution-layer-cosmos-evm/types"
-	"github.com/airchains-network/execution-layer-cosmos-evm/x/evm/statedb"
-	evmtypes "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
+	"github.com/airchains-network/rollup-evm/app/ante"
+	"github.com/airchains-network/rollup-evm/server/config"
+	"github.com/airchains-network/rollup-evm/tests"
+	ethermint "github.com/airchains-network/rollup-evm/types"
+	"github.com/airchains-network/rollup-evm/x/evm/statedb"
+	evmtypes "github.com/airchains-network/rollup-evm/x/evm/types"
 
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 )

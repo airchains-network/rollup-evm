@@ -4,7 +4,7 @@ FROM golang:alpine AS build-env
 ENV PACKAGES git build-base
 
 # Set working directory for the build
-WORKDIR /go/src/github.com/airchains-network/execution-layer-cosmos-evm
+WORKDIR /go/src/github.com/airchains-network/rollup-evm
 
 # Install dependencies
 RUN apk add --update $PACKAGES
@@ -24,7 +24,7 @@ RUN apk add --update ca-certificates jq
 WORKDIR /
 
 # Copy over binaries from the build-env
-COPY --from=build-env /go/src/github.com/airchains-network/execution-layer-cosmos-evm/build/aircosmicd /usr/bin/aircosmicd
+COPY --from=build-env /go/src/github.com/airchains-network/rollup-evm/build/aircosmicd /usr/bin/aircosmicd
 
 # Run aircosmicd by default
 CMD ["aircosmicd"]

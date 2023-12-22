@@ -12,15 +12,15 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/airchains-network/execution-layer-cosmos-evm/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/airchains-network/rollup-evm/blob/main/LICENSE
 package statedb
 
 import (
 	"math/big"
 
+	"github.com/airchains-network/rollup-evm/x/evm/types"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/params"
-	"github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
 )
 
 // TxConfig encapulates the readonly information of current tx for `StateDB`.

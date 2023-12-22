@@ -12,14 +12,14 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/airchains-network/execution-layer-cosmos-evm/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/airchains-network/rollup-evm/blob/main/LICENSE
 package keeper
 
 import (
+	v4 "github.com/airchains-network/rollup-evm/x/evm/migrations/v4"
+	v5 "github.com/airchains-network/rollup-evm/x/evm/migrations/v5"
+	"github.com/airchains-network/rollup-evm/x/evm/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	v4 "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/migrations/v4"
-	v5 "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/migrations/v5"
-	"github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
 )
 
 // Migrator is a struct for handling in-place store migrations.

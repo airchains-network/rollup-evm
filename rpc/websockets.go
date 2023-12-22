@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/airchains-network/execution-layer-cosmos-evm/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/airchains-network/rollup-evm/blob/main/LICENSE
 package rpc
 
 import (
@@ -41,11 +41,11 @@ import (
 	rpcclient "github.com/tendermint/tendermint/rpc/jsonrpc/client"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/airchains-network/execution-layer-cosmos-evm/rpc/ethereum/pubsub"
-	rpcfilters "github.com/airchains-network/execution-layer-cosmos-evm/rpc/namespaces/ethereum/eth/filters"
-	"github.com/airchains-network/execution-layer-cosmos-evm/rpc/types"
-	"github.com/airchains-network/execution-layer-cosmos-evm/server/config"
-	evmtypes "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
+	"github.com/airchains-network/rollup-evm/rpc/ethereum/pubsub"
+	rpcfilters "github.com/airchains-network/rollup-evm/rpc/namespaces/ethereum/eth/filters"
+	"github.com/airchains-network/rollup-evm/rpc/types"
+	"github.com/airchains-network/rollup-evm/server/config"
+	evmtypes "github.com/airchains-network/rollup-evm/x/evm/types"
 )
 
 type WebsocketsServer interface {

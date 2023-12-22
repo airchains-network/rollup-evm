@@ -1,10 +1,10 @@
 package backend
 
 import (
+	"github.com/airchains-network/rollup-evm/rpc/backend/mocks"
+	rpc "github.com/airchains-network/rollup-evm/rpc/types"
+	feemarkettypes "github.com/airchains-network/rollup-evm/x/feemarket/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/airchains-network/execution-layer-cosmos-evm/rpc/backend/mocks"
-	rpc "github.com/airchains-network/execution-layer-cosmos-evm/rpc/types"
-	feemarkettypes "github.com/airchains-network/execution-layer-cosmos-evm/x/feemarket/types"
 )
 
 var _ feemarkettypes.QueryClient = &mocks.FeeMarketQueryClient{}

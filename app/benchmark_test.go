@@ -5,8 +5,8 @@ import (
 	"io"
 	"testing"
 
+	"github.com/airchains-network/rollup-evm/encoding"
 	"github.com/cosmos/cosmos-sdk/simapp"
-	"github.com/airchains-network/execution-layer-cosmos-evm/encoding"
 	abci "github.com/tendermint/tendermint/abci/types"
 	"github.com/tendermint/tendermint/libs/log"
 	dbm "github.com/tendermint/tm-db"

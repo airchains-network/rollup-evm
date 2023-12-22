@@ -17,9 +17,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	rpctypes "github.com/airchains-network/execution-layer-cosmos-evm/rpc/types"
-	ethermint "github.com/airchains-network/execution-layer-cosmos-evm/types"
-	evmtypes "github.com/airchains-network/execution-layer-cosmos-evm/x/evm/types"
+	rpctypes "github.com/airchains-network/rollup-evm/rpc/types"
+	ethermint "github.com/airchains-network/rollup-evm/types"
+	evmtypes "github.com/airchains-network/rollup-evm/x/evm/types"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
