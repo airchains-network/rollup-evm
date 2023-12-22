@@ -64,17 +64,17 @@ To properly configure the EVM-based Cosmos Chain, you need to set up a `config.j
 
 
 # Step 2
-To Start a New Chain with the default configuration, run the following command:
+To Initalise a New Chain with the default configuration, run the following command:
 
 ```
-sh init.sh
+sh setup.sh
 ```
 
 # Step 3
-To Restart the Chain from the Same Block Height Where Stopped, run the following command:
+To Start the Chain , run the following command:
 
 ```
-sh restart.sh
+sh start-chain.sh
 ```
 
 
